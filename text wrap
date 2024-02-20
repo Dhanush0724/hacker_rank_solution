@@ -1,0 +1,28 @@
+import textwrap
+
+def wrap(string, max_width):
+    wrapped = ""
+    for i  in range(0, len(string), max_width):
+        wrapped += string[i:i+max_width] + "\n"
+    return wrapped
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
+
+
+# or or orrrrrrrrr inbuild function
+
+import textwrap
+
+def wrap(string, max_width):
+    return "\n".join(textwrap.wrap(string, max_width))
+
+# Sample input
+input_string = "ABCDEFGHIJKLIMNOQRSTUVWXYZ"
+width = 4
+
+# Call the wrap function with the sample input
+output = wrap(input_string, width)
+print(output)
