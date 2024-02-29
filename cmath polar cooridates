@@ -1,0 +1,7 @@
+import cmath 
+in_num = input()
+complex_num = complex(in_num)
+y = abs(complex(complex_num))#r
+x = cmath.phase(complex(complex_num))#phase angle
+print(y)
+print(x)
