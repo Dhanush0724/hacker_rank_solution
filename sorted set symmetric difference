@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+M = int(input())
+x = list(map(int,input().split()))
+N = int(input())
+y = list(map(int,input().split()))
+
+d1 = set(x) - set(y)
+d2 = set(y) - set(x)
+
+li = list(d1)+list(d2)
+li.sort()
+for num in li:
+    print(num)
