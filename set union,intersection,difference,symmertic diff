@@ -1,0 +1,31 @@
+n = int(input())
+roll_n = set(map(int,input().split()))
+b = int(input())
+roll_b = map(int,input().split())
+print(len(roll_n.union(roll_b)))
+
+/////intersection
+
+n = int(input())
+roll_n = set(map(int,input().split()))
+b = int(input())
+roll_b = map(int,input().split())
+print(len(roll_n.union(roll_b)))
+
+///difference
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+roll_n = set(map(int,input().split()))
+b = int(input())
+roll_b = set(map(int,input().split()))
+print(len(roll_n-roll_b))
+
+//symmetric difference
+
+n = int(input())
+roll_n = set(map(int,input().split()))
+b = int(input())
+roll_b = set(map(int,input().split()))
+print(len(roll_n^roll_b))
