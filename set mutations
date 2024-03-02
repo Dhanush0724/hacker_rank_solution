@@ -1,0 +1,17 @@
+n = int(input())
+A = set(map(int, input().split()))
+other_sets_count = int(input())
+for _ in range(other_sets_count):
+    operation, length = input().split()
+    numbers = set(map(int, input().split()))
+    if operation == 'intersection_update':
+        A.intersection_update(numbers)
+    elif operation == 'update':
+        A.update(numbers)
+    elif operation == 'symmetric_difference_update':
+        A.symmetric_difference_update(numbers)
+    elif operation == 'difference_update':
+        A.difference_update(numbers)
+    else:
+        pass
+print(sum(A))
