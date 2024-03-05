@@ -1,0 +1,21 @@
+
+def is_subset(A, B):
+    return A.issubset(B)
+
+
+N = int(input())
+
+
+for _ in range(N):
+   
+    nA = int(input())
+   
+    A = set(map(int, input().split()))
+
+    
+    nB = int(input())
+   
+    B = set(map(int, input().split()))
+
+  
+    print(is_subset(A, B))
