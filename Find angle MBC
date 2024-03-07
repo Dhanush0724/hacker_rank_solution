@@ -1,0 +1,8 @@
+from math import degrees, atan
+
+ab = float(input())
+bc = float(input())
+
+mbc = round(degrees(atan(ab/bc)))
+
+print(str(mbc) + chr(176))
