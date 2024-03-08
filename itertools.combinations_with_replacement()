@@ -1,0 +1,13 @@
+from itertools import combinations_with_replacement
+
+
+
+x, n = input().split()
+n = int(n)
+
+
+combs = sorted(combinations_with_replacement(sorted(x), n))
+
+
+for comb in combs:
+    print(''.join(comb))
