@@ -1,0 +1,15 @@
+
+string = input().strip()
+count = 1
+current_index = string[0]
+
+for char in string[1:]:
+    if char==current_index:
+        count+=1
+    
+    else :
+        print(f"({count}, {current_index})",end=" ")#print for if 
+        count = 1
+        current_index = char
+        
+print(f"({count}, {current_index})",end=" ")
