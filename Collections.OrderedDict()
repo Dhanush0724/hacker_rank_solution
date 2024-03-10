@@ -1,0 +1,12 @@
+from collections import OrderedDict
+
+N = int(input())
+ticket = OrderedDict()
+for i in range(N):
+    purchase = input().split()
+    if ' '.join(purchase[:-1]) not in ticket:
+        ticket[' '.join(purchase[:-1])] = int(purchase[-1])
+    else:
+        ticket[' '.join(purchase[:-1])] += int(purchase[-1])
+for items in ticket.items():
+    print(items[0] + ' ' + str(items[1]))
