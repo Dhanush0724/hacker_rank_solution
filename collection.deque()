@@ -1,0 +1,26 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import deque
+N = int(input())
+d = deque()
+for _ in range(N):
+    command = input().split()
+    method = command[0]
+    if method=='append':
+        value = int(command[1])
+        d.append(value)
+    elif method=='pop':
+        d.pop()
+    elif method=='popleft':
+        
+        d.popleft()
+    elif method=='appendleft':
+        value = int(command[1])
+        d.appendleft(value)
+    else :
+        print("enter a valid")
+x = list(d)
+res = map(str, x)
+result = " ".join(res)
+print(result)
+
+    
