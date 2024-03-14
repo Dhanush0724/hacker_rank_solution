@@ -1,0 +1,14 @@
+def solve(s):
+    
+    words = s.split(' ')
+
+    cap_words = [word.capitalize() for word in words]
+
+    cap_name = ''.join(cap_words)
+    
+    return cap_name
+   
+if __name__ == '__main__':
+    s = input()
+    result = solve(s)
+    print(result)
