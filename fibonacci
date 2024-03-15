@@ -1,0 +1,10 @@
+def fibonacci_sequence(limit):
+    fibo = [0,1]
+    while fibo[-1]+fibo[-2]<=limit:
+        fibo.append(fibo[-1]+fibo[-2])
+        
+    return fibo
+    
+limit = int(input("enter the limit...."))
+x = fibonacci_sequence(limit)
+print(x)
