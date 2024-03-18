@@ -1,0 +1,24 @@
+s = list(map(str,input()))
+s.sort()
+lower = []
+upper = []
+odd = []
+even = []
+for i in s:
+    if i.isalpha():
+        if i.islower():
+            lower.append(i)
+        else :
+            upper.append(i)
+for i in s:
+    if i.isdigit():
+        if int(i)%2==0:
+            even.append(i)
+        else :
+            odd.append(i)
+            
+    
+result = lower+upper+odd+even
+        
+print("".join(result))
+          
