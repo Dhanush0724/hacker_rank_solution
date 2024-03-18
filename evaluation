@@ -1,0 +1,11 @@
+from __future__ import print_function
+
+# Input string
+var = input()
+
+# Evaluate the expression
+result = eval(var)
+
+# Print the result
+if result is not None:
+    print(result)
