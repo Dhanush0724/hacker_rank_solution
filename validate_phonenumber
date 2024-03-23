@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+def phonenumber(number):
+    pattern = r'^[789]\d{9}$'
+    if re.match(pattern,number):
+        return "YES"
+    else :
+        return "NO"
+
+if __name__ == "__main__":
+    n = int(input())
+    for _ in range(n):
+        number = input().strip()
+        print(phonenumber(number))
+        
