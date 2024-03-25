@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+
+import re
+
+hex_regex = re.compile(r'#[a-fA-F0-9]{3}(?:[a-fA-F0-9]{3})?')
+
+n = int(input())
+for _ in range(n):
+    line = input()
+    
+    if ':' not in line:
+        continue
+    result = hex_regex.findall(line)
+    for m in result:
+        print(m)
