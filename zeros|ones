@@ -1,0 +1,6 @@
+import numpy
+
+ZO = list(map(int, input().split()))
+
+print(numpy.zeros((ZO), int))
+print(numpy.ones((ZO), int))
