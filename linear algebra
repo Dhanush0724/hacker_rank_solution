@@ -1,0 +1,13 @@
+import numpy
+from numpy import linalg
+
+N = int(input())
+matrix  = []
+for _ in range(N):
+    row = list(map(float,input().split()))
+    matrix.append(row)
+    
+A = numpy.array(matrix)
+
+print(linalg.det(A))
+     
