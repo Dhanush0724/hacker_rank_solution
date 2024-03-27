@@ -1,0 +1,7 @@
+import numpy
+
+nine = list(map(int,input().split()))
+my = numpy.array(nine)
+my.shape = (3,3)
+print(my)
+
