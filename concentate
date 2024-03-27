@@ -1,0 +1,7 @@
+import numpy as np
+
+if __name__ == "__main__":
+    N, M, P = map(int, input().split(" "))
+    A = np.array([list(map(int, input().split(" "))) for _ in range(N)])
+    B = np.array([list(map(int, input().split(" "))) for _ in range(M)])
+    print(np.concatenate((A, B), axis = 0))
