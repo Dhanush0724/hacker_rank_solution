@@ -1,0 +1,20 @@
+from decimal import Decimal as D
+
+def main():
+    n = D(input())
+    ca = D(0)
+    for ch in input().split():
+        if ch == 'a':
+            ca += 1
+    k = int(input())
+    m = n - ca
+    su, mu = D(0), D(1)
+    for i in range(k):
+        t = D(i)
+        su += mu * (ca / (n - t))
+        mu *= (m - t) / (n - t)
+    print(su)
+    
+    
+if __name__ == "__main__":
+    main()
