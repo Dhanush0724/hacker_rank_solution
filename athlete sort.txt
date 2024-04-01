@@ -1,0 +1,11 @@
+N, M = map(int, input().split())
+list_of_lists = []
+
+for n in range(N):
+    list_of_lists.append(list(map(int, input().split())))
+    
+k = int(input())
+sorted_list_of_lists = sorted(list_of_lists, key=lambda item: item[k])
+
+for _ in sorted_list_of_lists:
+    print(*_)
