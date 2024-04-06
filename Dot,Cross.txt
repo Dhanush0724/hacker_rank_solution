@@ -1,0 +1,19 @@
+import numpy as np
+
+N = int(input())
+M = N
+matrix_1 = []
+for _ in range(N):
+    row = list(map(int, input().split()))
+    matrix_1.append(row)
+
+matrix_2 = []
+for _ in range(M):
+    row = list(map(int, input().split()))
+    matrix_2.append(row)
+
+x = np.array(matrix_1)
+y = np.array(matrix_2)
+
+print(np.dot(x, y))
+
