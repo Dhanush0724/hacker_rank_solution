@@ -1,0 +1,15 @@
+import numpy
+
+
+
+
+N,M = list(map(int,input().split()))
+matrix = []
+for _ in range(N):
+    a = list(map(int,input().split()))
+    matrix.append(a)
+    
+x = numpy.array(matrix)
+y = numpy.min(x, axis=1)
+print(numpy.max(y))
+
