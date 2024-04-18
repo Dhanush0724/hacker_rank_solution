@@ -1,0 +1,15 @@
+def wrapper(f):
+    def fun(l):
+        striped = sorted([i[-10:] for i in l])
+        for i in striped:
+            print("+91 "+i[0:5]+" "+i[5:])
+    return fun
+@wrapper
+def sort_phone(l):
+    print(*sorted(l), sep='\n')
+
+if __name__ == '__main__':
+    l = [input() for _ in range(int(input()))]
+    sort_phone(l) 
+
+
