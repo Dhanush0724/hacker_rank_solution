@@ -1,0 +1,13 @@
+import numpy
+
+
+
+N,M = list(map(int,input().split()))
+matrix = []
+for _ in range(N):
+    a = list(map(int,input().split()))
+    matrix.append(a)
+    
+x = numpy.array(matrix)
+y = numpy.sum(x, axis=0)
+print(numpy.prod(y))
